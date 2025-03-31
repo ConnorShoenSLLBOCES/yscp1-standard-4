@@ -10,7 +10,18 @@ Below 60: "F"
 '''
 
 # This program will assign grades based on the score
-
-score = float(input("Enter the student's score: "))
-
+try:
+    score = float(input("Enter the student's score: "))
+except ValueError:
+    print ("Please enter a number.")
 # Complete the if-elif-else logic to assign grades
+if score >= 90:
+    print ("A")
+elif score >= 80:
+    print ("B")
+elif score >= 70:
+    print ("C")
+elif score >= 60:
+    print ("D")
+elif score < 60:
+    print ("F")

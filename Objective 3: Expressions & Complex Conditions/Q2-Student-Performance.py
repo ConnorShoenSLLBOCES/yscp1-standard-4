@@ -12,3 +12,7 @@ grade = float(input("Enter your grade: "))
 attendance = float(input("Enter your attendance percentage: "))
 
 # Use complex conditions to determine if the student passed
+if grade >= 65 and attendance > 75:
+    print ("You Passed!")
+else:
+    print ("You Failed!")

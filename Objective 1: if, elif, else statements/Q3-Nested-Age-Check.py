@@ -10,7 +10,22 @@ If the person’s age is 18 or 21, print "Young Adult".
 '''
 
 # This program will check age categories
-
-age = int(input("Enter your age: "))
-
 # Add if-elif-else logic here with nested conditions
+try:
+    age = int(input("Enter your age: "))
+except ValueError:
+    print ("Please enter a whole number.")
+if age < 13:
+    print ("Child")
+elif age >= 65:
+    print ("Senior")
+elif age >= 20:
+    if age == 21:
+        print ("Young Adult")
+    else:
+        print ("Adult")
+elif age >= 13:
+    if age == 18:
+        print ("Young Adult")
+    else:
+        print ("Teenager")

@@ -9,5 +9,8 @@ numbers = [10, 20, 30, 40, 50]  # List of numbers
 
 # Initialize a variable to hold the sum
 total_sum = 0
-
 # Use a for loop to iterate through the numbers
+for i in numbers:
+    print (f"{total_sum} + {i} =")
+    total_sum += i
+    print (total_sum)
